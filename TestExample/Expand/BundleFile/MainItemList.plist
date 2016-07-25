@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>图片(UIImageView)</string>
+	<string>瀑布流(WaterFall View)</string>
+	<string>图文混排(Text &amp; Graphice)</string>
+	<string>标签(Label)</string>
+	<string>表格(UITableview)</string>
+	<string>网页视图(Webview)</string>
+	<string>日历(Calendar)</string>
+	<string>键盘(Keyboard)</string>
+	<string>网络(Networking)</string>
+	<string>弹出视图(Popup View)</string>
+	<string>刷新控件(Refresh Control)</string>
+	<string>菜单(Menu)</string>
+	<string>地图(MapView)</string>
+</array>
+</plist>

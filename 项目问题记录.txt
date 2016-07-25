@@ -1,0 +1,16 @@
+问题1：从NSBundle获取资源使用的方法?
+   NSURL *plistFile = [[NSBundle mainBundle] URLForResource:plist_MainItem withExtension:@"plist"];
+   _arrData = [[NSMutableArray alloc] initWithContentsOfURL:plistFile];
+
+问题2：手动添加pch文件？
+   添加完pch文件后，在pcprix中设置路径,$(SRCROOT)/TestExample/TestExample-Prefix.pch
+
+问题3：程序加载的时候上面和下面都是黑屏，只是显示中间一块区域
+   在lauchscreenfile中添加默认的lauchscreenfile.stroyBoard就好了
+
+问题4：2016-07-25 17:45:52.938 TestExample[9311:135062] *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '*** -[NSURL initFileURLWithPath:]: nil string parameter'
+   读取的html文件名字不存在
+
+问题5：xcode 7中不支持http链接
+   在右侧点击Add Row添加NSAppTransportSecurity，类型为Dictionary，然后再添加子项目NSAllowsArbitraryLoads类行为Boolean值为YES
+
