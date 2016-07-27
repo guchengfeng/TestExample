@@ -13,6 +13,12 @@
 #import "JSViewController02.h"
 #import "MapViewController01.h"
 #import "MapViewController02.h"
+#import "GCFAFViewController.h"
+#import "masonryExzample1.h"
+#import "masonryExzample2.h"
+#import "masonryExzample3.h"
+#import "KeyBoradListerViewController.h"
+
 
 @interface SecondLevelViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -119,6 +125,22 @@
         }
             break;
             
+        case 8:
+        {
+            switch (indexPath.row) {
+                case 0:
+                {
+                    GCFAFViewController *tempController=[[GCFAFViewController alloc]init];
+                    [self.navigationController pushViewController:tempController animated:YES];
+                }
+                    break;
+                    
+                default:
+                    break;
+            }
+        }
+            break;
+            
         case 12:
         {
             switch (indexPath.row) {
@@ -141,10 +163,42 @@
         }
             break;
             
-            
         
-            
-            
+        case 16:
+        {
+            switch (indexPath.row) {
+                case 0:
+                {
+                    masonryExzample1 *tempController=[[masonryExzample1 alloc]initWithNibName:@"masonryExzample1" bundle:nil];
+                    [self.navigationController pushViewController:tempController animated:YES];
+                }
+                    break;
+                case 1:
+                {
+                    masonryExzample2 *tempController=[[masonryExzample2 alloc]initWithNibName:@"masonryExzample2" bundle:nil];
+                    [self.navigationController pushViewController:tempController animated:YES];
+                }
+                    break;
+                case 2:
+                {
+                    masonryExzample3 *tempController=[[masonryExzample3 alloc]initWithNibName:@"masonryExzample3" bundle:nil];
+                    [self.navigationController pushViewController:tempController animated:YES];
+                }
+                    break;
+                
+                case 3:
+                {
+                    KeyBoradListerViewController *tempController=[[KeyBoradListerViewController alloc]initWithNibName:@"KeyBoradListerViewController" bundle:nil];
+                    [self.navigationController pushViewController:tempController animated:YES];
+                }
+                    break;
+                    
+                default:
+                    break;
+            }
+        }
+            break;
+        
         default:
             break;
     }

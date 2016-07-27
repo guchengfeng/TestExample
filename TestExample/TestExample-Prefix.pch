@@ -16,8 +16,16 @@
 #import "GCFConstantString.h"
 #import "GCFMacroDefinitionFont.h"
 #import "Masonry.h"
+#import "UIImage+JZ.h"
+// 1.判断是否为iOS7
+#define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
+
+
+// 2.获得RGB颜色
+#define JZColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 
 #endif /* TestExample_Prefix_pch */
+
 
 
 

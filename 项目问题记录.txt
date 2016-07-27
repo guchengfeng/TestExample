@@ -14,3 +14,6 @@
 问题5：xcode 7中不支持http链接
    在右侧点击Add Row添加NSAppTransportSecurity，类型为Dictionary，然后再添加子项目NSAllowsArbitraryLoads类行为Boolean值为YES
 
+问题6：masonry框架使用
+    masonry框架使用的时候必须先要将子view添加到父控件上面
+    mas_equalto比equealto多一些cgsize，cgpoint的数据类型

@@ -8,6 +8,11 @@
 
 #import "AppDelegate.h"
 #import "mainViewController.h"
+#import "GCFTabBarController.h"
+#import "mainViewController.h"
+#import "APIViewController.h"
+#import "ArchitectureViewController.h"
+#import "SettingViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,8 +25,31 @@
     // Override point for customization after application launch.
     
     _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    mainViewController *tempController = [[mainViewController alloc]init];
-    _navigationController= [[UINavigationController alloc] initWithRootViewController:tempController];
+    GCFTabBarController *tabBarController = [[GCFTabBarController alloc]init];
+    _navigationController= [[UINavigationController alloc] initWithRootViewController:tabBarController];
+    
+    //视图
+    mainViewController * home = [[mainViewController alloc]initWithStyle:UITableViewStylePlain];
+    home.tabBarItem.badgeValue = @"12";
+    [tabBarController tabbarWithController:home withName:@"视图" withImageName:@"tabbar_home" withSelectedImageName:@"tabbar_home_selected"];
+    
+    //功能
+    APIViewController * message = [[APIViewController alloc]initWithStyle:UITableViewStylePlain];
+    message.tabBarItem.badgeValue = @"new";
+    [tabBarController tabbarWithController:message withName:@"API" withImageName:@"tabbar_message_center" withSelectedImageName:@"tabbar_message_center_selected"];
+    
+    
+    //架构
+    ArchitectureViewController * discover = [[ArchitectureViewController alloc]initWithStyle:UITableViewStylePlain];
+    discover.tabBarItem.badgeValue = @"9";
+    [tabBarController tabbarWithController:discover withName:@"架构" withImageName:@"tabbar_discover" withSelectedImageName:@"tabbar_discover_selected"];
+    
+    
+    //我
+    SettingViewController * me = [[SettingViewController alloc]initWithStyle:UITableViewStylePlain];
+    me.tabBarItem.badgeValue = @"100";
+    [tabBarController tabbarWithController:me withName:@"我" withImageName:@"tabbar_profile" withSelectedImageName:@"tabbar_profile_selected"];
+    
     _window.rootViewController=_navigationController;
     [self.window makeKeyAndVisible];
     
