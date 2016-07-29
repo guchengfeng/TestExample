@@ -28,3 +28,4 @@
 #define plist_API_NetWork_Item @"NetWork"
 #define plist_API_Map_Item @"Map"
 #define plist_API_Masonry_Item @"Masonry"
+#define plist_API_Specialeffects_Item @"Specialeffects"

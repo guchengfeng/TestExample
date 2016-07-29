@@ -12,6 +12,12 @@
 		A766C9351D4B3ED800B90345 /* RootNetWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A766C9341D4B3ED800B90345 /* RootNetWorkViewController.m */; };
 		A766C9381D4B401200B90345 /* RootMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A766C9371D4B401200B90345 /* RootMapViewController.m */; };
 		A766C93B1D4B405200B90345 /* RootViewLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A766C93A1D4B405200B90345 /* RootViewLayoutViewController.m */; };
+		A766C93F1D4B571B00B90345 /* RootSpecialeffectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A766C93E1D4B571B00B90345 /* RootSpecialeffectsViewController.m */; };
+		A766C9411D4B578800B90345 /* Specialeffects.plist in Resources */ = {isa = PBXBuildFile; fileRef = A766C9401D4B578800B90345 /* Specialeffects.plist */; };
+		A766C9461D4B58D300B90345 /* Custom3DTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = A766C9431D4B58D300B90345 /* Custom3DTouch.m */; };
+		A766C9471D4B58D300B90345 /* CustomSpotlight.m in Sources */ = {isa = PBXBuildFile; fileRef = A766C9451D4B58D300B90345 /* CustomSpotlight.m */; };
+		A766C94A1D4B5A7900B90345 /* 3DTouchMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A766C9491D4B5A7900B90345 /* 3DTouchMenuViewController.m */; };
+		A766C94D1D4B5AAC00B90345 /* SpotlightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A766C94C1D4B5AAC00B90345 /* SpotlightViewController.m */; };
 		A784FD2B1D470B770055B525 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A784FD1B1D470B770055B525 /* MJRefresh.bundle */; };
 		A784FD2C1D470B770055B525 /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = A784FD1E1D470B770055B525 /* MJRefreshBaseView.m */; };
 		A784FD2D1D470B770055B525 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = A784FD201D470B770055B525 /* MJRefreshConst.m */; };
@@ -216,6 +222,17 @@
 		A766C9371D4B401200B90345 /* RootMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootMapViewController.m; sourceTree = "<group>"; };
 		A766C9391D4B405200B90345 /* RootViewLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewLayoutViewController.h; sourceTree = "<group>"; };
 		A766C93A1D4B405200B90345 /* RootViewLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewLayoutViewController.m; sourceTree = "<group>"; };
+		A766C93D1D4B571B00B90345 /* RootSpecialeffectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootSpecialeffectsViewController.h; sourceTree = "<group>"; };
+		A766C93E1D4B571B00B90345 /* RootSpecialeffectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootSpecialeffectsViewController.m; sourceTree = "<group>"; };
+		A766C9401D4B578800B90345 /* Specialeffects.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Specialeffects.plist; sourceTree = "<group>"; };
+		A766C9421D4B58D300B90345 /* Custom3DTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Custom3DTouch.h; sourceTree = "<group>"; };
+		A766C9431D4B58D300B90345 /* Custom3DTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Custom3DTouch.m; sourceTree = "<group>"; };
+		A766C9441D4B58D300B90345 /* CustomSpotlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSpotlight.h; sourceTree = "<group>"; };
+		A766C9451D4B58D300B90345 /* CustomSpotlight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSpotlight.m; sourceTree = "<group>"; };
+		A766C9481D4B5A7900B90345 /* 3DTouchMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 3DTouchMenuViewController.h; sourceTree = "<group>"; };
+		A766C9491D4B5A7900B90345 /* 3DTouchMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 3DTouchMenuViewController.m; sourceTree = "<group>"; };
+		A766C94B1D4B5AAC00B90345 /* SpotlightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotlightViewController.h; sourceTree = "<group>"; };
+		A766C94C1D4B5AAC00B90345 /* SpotlightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotlightViewController.m; sourceTree = "<group>"; };
 		A784FD1B1D470B770055B525 /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
 		A784FD1C1D470B770055B525 /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
 		A784FD1D1D470B770055B525 /* MJRefreshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBaseView.h; sourceTree = "<group>"; };
@@ -525,12 +542,30 @@
 		A766C92F1D4B3C1500B90345 /* APIPlist */ = {
 			isa = PBXGroup;
 			children = (
+				A766C9401D4B578800B90345 /* Specialeffects.plist */,
 				A7DF14081D4B397D0023E08D /* APIList.plist */,
 				A784FD4F1D471A860055B525 /* NetWork.plist */,
 				A784FD541D47516E0055B525 /* Masonry.plist */,
 				A7A604381D4639AF00466EA2 /* Map.plist */,
 			);
 			path = APIPlist;
+			sourceTree = "<group>";
+		};
+		A766C93C1D4B56FE00B90345 /* SpecialeffectsOptimization */ = {
+			isa = PBXGroup;
+			children = (
+				A766C9421D4B58D300B90345 /* Custom3DTouch.h */,
+				A766C9431D4B58D300B90345 /* Custom3DTouch.m */,
+				A766C9441D4B58D300B90345 /* CustomSpotlight.h */,
+				A766C9451D4B58D300B90345 /* CustomSpotlight.m */,
+				A766C93D1D4B571B00B90345 /* RootSpecialeffectsViewController.h */,
+				A766C93E1D4B571B00B90345 /* RootSpecialeffectsViewController.m */,
+				A766C9481D4B5A7900B90345 /* 3DTouchMenuViewController.h */,
+				A766C9491D4B5A7900B90345 /* 3DTouchMenuViewController.m */,
+				A766C94B1D4B5AAC00B90345 /* SpotlightViewController.h */,
+				A766C94C1D4B5AAC00B90345 /* SpotlightViewController.m */,
+			);
+			path = SpecialeffectsOptimization;
 			sourceTree = "<group>";
 		};
 		A784FD191D470B770055B525 /* Refresh */ = {
@@ -821,6 +856,7 @@
 		A7CB9D5A1D462D8A00F3CB61 /* SecondPage */ = {
 			isa = PBXGroup;
 			children = (
+				A766C93C1D4B56FE00B90345 /* SpecialeffectsOptimization */,
 				A784FD561D4751BD0055B525 /* ViewLayout */,
 				A784FD331D470E4B0055B525 /* NetWork */,
 				A784FD191D470B770055B525 /* Refresh */,
@@ -1437,6 +1473,7 @@
 				A7D6A7451D47630500B6E15C /* tabbar_home_selected@2x.png in Resources */,
 				A7D6A7511D47630500B6E15C /* tabbar_message_center_selected_os7@2x.png in Resources */,
 				A7D6A75E1D47630500B6E15C /* tabbar_slider@2x.png in Resources */,
+				A766C9411D4B578800B90345 /* Specialeffects.plist in Resources */,
 				A7D6A73D1D47630500B6E15C /* tabbar_discover_selected_os7@2x.png in Resources */,
 				A7D6A74D1D47630500B6E15C /* Contents.json in Resources */,
 				A7CB9D671D4632C300F3CB61 /* Image.plist in Resources */,
@@ -1493,6 +1530,7 @@
 				A7CB9D061D4616E300F3CB61 /* CDLoadExceptionView.m in Sources */,
 				A7CB9D601D462D8A00F3CB61 /* JSViewController01.m in Sources */,
 				A784FD451D470E4B0055B525 /* AFURLRequestSerialization.m in Sources */,
+				A766C9471D4B58D300B90345 /* CustomSpotlight.m in Sources */,
 				A7CB9D4B1D462B4800F3CB61 /* UIView+SDExtension.m in Sources */,
 				A7CB9D481D462B4800F3CB61 /* TAPageControl.m in Sources */,
 				A784FD441D470E4B0055B525 /* AFSecurityPolicy.m in Sources */,
@@ -1506,6 +1544,7 @@
 				A7CB9CE61D46083300F3CB61 /* MASCompositeConstraint.m in Sources */,
 				A7CB9CFB1D460F2100F3CB61 /* MBProgressHUD.m in Sources */,
 				A7CB9CE81D46083300F3CB61 /* MASConstraintMaker.m in Sources */,
+				A766C93F1D4B571B00B90345 /* RootSpecialeffectsViewController.m in Sources */,
 				A7D6A6A41D475BE600B6E15C /* SettingViewController.m in Sources */,
 				A7CB9D571D462B4800F3CB61 /* UIImage+MultiFormat.m in Sources */,
 				A7DF140F1D4B3A570023E08D /* RootImageViewController.m in Sources */,
@@ -1535,6 +1574,8 @@
 				A7CB9D581D462B4800F3CB61 /* UIImage+WebP.m in Sources */,
 				A7EAB0AA1D4B267D00F0D43B /* TabbarTool.m in Sources */,
 				A7CB9D491D462B4800F3CB61 /* SDCollectionViewCell.m in Sources */,
+				A766C94D1D4B5AAC00B90345 /* SpotlightViewController.m in Sources */,
+				A766C94A1D4B5A7900B90345 /* 3DTouchMenuViewController.m in Sources */,
 				A7EAB0A31D4B263700F0D43B /* ZCTabBarButton.m in Sources */,
 				A766C9321D4B3D1300B90345 /* RootWebViewController.m in Sources */,
 				A784FD2D1D470B770055B525 /* MJRefreshConst.m in Sources */,
@@ -1559,6 +1600,7 @@
 				A7D6A6A71D475E5C00B6E15C /* UIImage+JZ.m in Sources */,
 				A7CB9D4F1D462B4800F3CB61 /* SDWebImageCompat.m in Sources */,
 				A7A6043D1D463A4E00466EA2 /* MapViewController01.m in Sources */,
+				A766C9461D4B58D300B90345 /* Custom3DTouch.m in Sources */,
 				A7CB9D4D1D462B4800F3CB61 /* NSData+ImageContentType.m in Sources */,
 				A7EF60581D3F509E00FA9822 /* main.m in Sources */,
 				A7A604401D463AC600466EA2 /* MapViewController02.m in Sources */,

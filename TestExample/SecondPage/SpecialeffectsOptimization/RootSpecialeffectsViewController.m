@@ -1,19 +1,20 @@
 //
-//  APIViewController.m
+//  ViewController.m
 //  TestExample
 //
-//  Created by OPS on 16/7/26.
+//  Created by OPS on 16/7/20.
 //  Copyright © 2016年 OPS. All rights reserved.
 //
 
-#import "APIViewController.h"
-#import "mainTableViewCell.h"
-#import "RootNetWorkViewController.h"
-#import "RootMapViewController.h"
-#import "RootViewLayoutViewController.h"
 #import "RootSpecialeffectsViewController.h"
+#import "mainTableViewCell.h"
+#import "RootImageViewController.h"
+#import "masonryExzample1.h"
+#import "masonryExzample2.h"
+#import "masonryExzample3.h"
+#import "KeyBoradListerViewController.h"
 
-@interface APIViewController ()
+@interface RootSpecialeffectsViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (strong,nonatomic)NSMutableArray *arrData;
 
@@ -21,20 +22,26 @@
 
 @end
 
-@implementation APIViewController
+@interface RootSpecialeffectsViewController ()
+
+@end
+
+@implementation RootSpecialeffectsViewController
+
 
 - (void)viewDidLoad {
     
     [super viewDidLoad];
     
-    NSURL *plistFile = [[NSBundle mainBundle] URLForResource:plist_APIItem withExtension:@"plist"];
+    NSURL *plistFile = [[NSBundle mainBundle] URLForResource:plist_API_Specialeffects_Item withExtension:@"plist"];
     _arrData = [[NSMutableArray alloc] initWithContentsOfURL:plistFile];
     [self.tableview reloadData];
+    
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma --mark 懒加载
@@ -80,25 +87,25 @@
             
         case 0:
         {
-            RootNetWorkViewController *tempController=[[RootNetWorkViewController alloc]init];
+            masonryExzample1 *tempController=[[masonryExzample1 alloc]init];
             [self.navigationController pushViewController:tempController animated:YES];
         }
             break;
         case 1:
         {
-            RootViewLayoutViewController *tempController=[[RootViewLayoutViewController alloc]init];
+            masonryExzample2 *tempController=[[masonryExzample2 alloc]init];
             [self.navigationController pushViewController:tempController animated:YES];
         }
             break;
         case 2:
         {
-            RootMapViewController *tempController=[[RootMapViewController alloc]init];
+            masonryExzample3 *tempController=[[masonryExzample3 alloc]init];
             [self.navigationController pushViewController:tempController animated:YES];
         }
             break;
-        case 5:
+        case 3:
         {
-            RootSpecialeffectsViewController *tempController=[[RootSpecialeffectsViewController alloc]init];
+            KeyBoradListerViewController *tempController=[[KeyBoradListerViewController alloc]init];
             [self.navigationController pushViewController:tempController animated:YES];
         }
             break;
