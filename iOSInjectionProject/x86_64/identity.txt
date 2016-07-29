@@ -1,0 +1,2 @@
+/Users/OPS/Library/Developer/Xcode/DerivedData/TestExample-cydxqpzyaaaxykgmfpsgqbaxaxfd/Build/Products/Debug-iphonesimulator/TestExample.app
+iPhone Developer

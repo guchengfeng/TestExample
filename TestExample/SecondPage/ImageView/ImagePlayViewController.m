@@ -46,6 +46,12 @@
     _scrollAdvertisView.backgroundColor=[UIColor groupTableViewBackgroundColor];
 }
 
+-(void)injected{
+    NSLog(@"I've been injected: %@", self);
+    
+    
+}
+
 - (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index
 {
 	
