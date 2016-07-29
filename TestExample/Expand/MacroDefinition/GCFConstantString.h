@@ -19,4 +19,12 @@
  *
  */
 
-#define plist_MainItem @"MainItemList"
+#define plist_UIItem @"UIList"
+#define plist_APIItem @"APIList"
+
+#define plist_UI_Image_Item @"Image"
+#define plist_UI_Web_Item @"Web"
+
+#define plist_API_NetWork_Item @"NetWork"
+#define plist_API_Map_Item @"Map"
+#define plist_API_Masonry_Item @"Masonry"

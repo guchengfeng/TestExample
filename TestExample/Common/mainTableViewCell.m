@@ -35,7 +35,7 @@
         
         _labelContent=[[UILabel alloc]init];
         _labelContent.frame=CGRectMake(20, 0, SCREEN_WIDTH, self.frame.size.height);
-        _labelContent.font=[UIFont systemFontOfSize:GeneralTextFont];
+        _labelContent.font=[UIFont systemFontOfSize:GeneralTitleFont];
         [self addSubview:_labelContent];
         
         _imgLine=[[UIImageView alloc]init];

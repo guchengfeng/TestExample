@@ -19,3 +19,4 @@
     mas_equalto比equealto多一些cgsize，cgpoint的数据类型
 
 问题6：iTunes store 登录会话过期
+

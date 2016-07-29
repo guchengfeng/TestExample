@@ -8,7 +8,8 @@
 
 #import "mainViewController.h"
 #import "mainTableViewCell.h"
-#import "SecondLevelViewController.h"
+#import "RootImageViewController.h"
+#import "RootWebViewController.h"
 
 @interface mainViewController ()
 
@@ -24,11 +25,12 @@
 
 @implementation mainViewController
 
+
 - (void)viewDidLoad {
     
     [super viewDidLoad];
     
-    NSURL *plistFile = [[NSBundle mainBundle] URLForResource:plist_MainItem withExtension:@"plist"];
+    NSURL *plistFile = [[NSBundle mainBundle] URLForResource:plist_UIItem withExtension:@"plist"];
     _arrData = [[NSMutableArray alloc] initWithContentsOfURL:plistFile];
     [self.tableview reloadData];
     
@@ -73,16 +75,30 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return SCREENH_HEIGHT/13;
+    return SCREENH_HEIGHT/10;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    SecondLevelViewController *controller=[[SecondLevelViewController alloc]init];
-    controller.itemIndex=indexPath.row;
-    [self.navigationController pushViewController:controller animated:YES];
+    switch (indexPath.row) {
+            
+        case 0:
+        {
+            RootImageViewController *tempController=[[RootImageViewController alloc]init];
+            [self.navigationController pushViewController:tempController animated:YES];
+        }
+            break;
+        case 3:
+        {
+            RootWebViewController *tempController=[[RootWebViewController alloc]init];
+            [self.navigationController pushViewController:tempController animated:YES];
+        }
+            break;
+            
+        default:
+            break;
+    }
+    
 }
-
-
 
 @end
