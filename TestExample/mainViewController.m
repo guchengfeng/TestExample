@@ -10,6 +10,7 @@
 #import "mainTableViewCell.h"
 #import "RootImageViewController.h"
 #import "RootWebViewController.h"
+#import "ThreeDTouchMenuViewController.h"
 
 @interface mainViewController ()
 
@@ -34,11 +35,29 @@
     _arrData = [[NSMutableArray alloc] initWithContentsOfURL:plistFile];
     [self.tableview reloadData];
     
+    [GCFNotificationCenter addObserver:self selector:@selector(responseShowTitle:) name:GCFNotification_3DTouch object:nil];
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+}
+
+
+- (void)responseShowTitle:(NSNotification *)notification
+{
+    
+    NSString *strTitle = [notification object];
+    [self performSelector:@selector(pushTo3DController:) withObject:strTitle afterDelay:1.0];
+    
+}
+
+-(void)pushTo3DController:(NSString *)title
+{
+    ThreeDTouchMenuViewController *controller=[[ThreeDTouchMenuViewController alloc]init];
+    controller.labTitle.text=title;
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 #pragma --mark 懒加载

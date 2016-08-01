@@ -29,7 +29,7 @@
 
 
 //2.获取通知中心
-#define LRNotificationCenter [NSNotificationCenter defaultCenter]
+#define GCFNotificationCenter [NSNotificationCenter defaultCenter]
 
 //3.设置随机颜色
 #define LRRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]

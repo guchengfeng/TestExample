@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface _DTouchMenuViewController : UIViewController
+@interface ThreeDTouchMenuViewController : UIViewController
+
+@property (strong , nonatomic) UILabel *labTitle;
 
 @end

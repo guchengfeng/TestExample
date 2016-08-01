@@ -13,6 +13,8 @@
 //主视图控制器
 @property(strong, readonly, nonatomic) UIViewController *mainViewController;
 
+-(NSMutableArray *)getArrNaviControllers;
+
 //获取单利
 + (id)shared;
 

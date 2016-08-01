@@ -16,7 +16,7 @@
 		A766C9411D4B578800B90345 /* Specialeffects.plist in Resources */ = {isa = PBXBuildFile; fileRef = A766C9401D4B578800B90345 /* Specialeffects.plist */; };
 		A766C9461D4B58D300B90345 /* Custom3DTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = A766C9431D4B58D300B90345 /* Custom3DTouch.m */; };
 		A766C9471D4B58D300B90345 /* CustomSpotlight.m in Sources */ = {isa = PBXBuildFile; fileRef = A766C9451D4B58D300B90345 /* CustomSpotlight.m */; };
-		A766C94A1D4B5A7900B90345 /* 3DTouchMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A766C9491D4B5A7900B90345 /* 3DTouchMenuViewController.m */; };
+		A766C94A1D4B5A7900B90345 /* ThreeDTouchMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A766C9491D4B5A7900B90345 /* ThreeDTouchMenuViewController.m */; };
 		A766C94D1D4B5AAC00B90345 /* SpotlightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A766C94C1D4B5AAC00B90345 /* SpotlightViewController.m */; };
 		A784FD2B1D470B770055B525 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A784FD1B1D470B770055B525 /* MJRefresh.bundle */; };
 		A784FD2C1D470B770055B525 /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = A784FD1E1D470B770055B525 /* MJRefreshBaseView.m */; };
@@ -229,8 +229,8 @@
 		A766C9431D4B58D300B90345 /* Custom3DTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Custom3DTouch.m; sourceTree = "<group>"; };
 		A766C9441D4B58D300B90345 /* CustomSpotlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSpotlight.h; sourceTree = "<group>"; };
 		A766C9451D4B58D300B90345 /* CustomSpotlight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSpotlight.m; sourceTree = "<group>"; };
-		A766C9481D4B5A7900B90345 /* 3DTouchMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 3DTouchMenuViewController.h; sourceTree = "<group>"; };
-		A766C9491D4B5A7900B90345 /* 3DTouchMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 3DTouchMenuViewController.m; sourceTree = "<group>"; };
+		A766C9481D4B5A7900B90345 /* ThreeDTouchMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeDTouchMenuViewController.h; sourceTree = "<group>"; };
+		A766C9491D4B5A7900B90345 /* ThreeDTouchMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeDTouchMenuViewController.m; sourceTree = "<group>"; };
 		A766C94B1D4B5AAC00B90345 /* SpotlightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotlightViewController.h; sourceTree = "<group>"; };
 		A766C94C1D4B5AAC00B90345 /* SpotlightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotlightViewController.m; sourceTree = "<group>"; };
 		A784FD1B1D470B770055B525 /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
@@ -300,6 +300,7 @@
 		A7A6043E1D463AC600466EA2 /* MapViewController02.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController02.h; sourceTree = "<group>"; };
 		A7A6043F1D463AC600466EA2 /* MapViewController02.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController02.m; sourceTree = "<group>"; };
 		A7A604411D463B7100466EA2 /* MapViewController01.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController01.xib; sourceTree = "<group>"; };
+		A7C836661D4F41C4008CA9A0 /* GCFNSNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCFNSNotification.h; sourceTree = "<group>"; };
 		A7CB9CB51D45E5A900F3CB61 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7CB9CB81D45E75000F3CB61 /* mainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainTableViewCell.h; sourceTree = "<group>"; };
 		A7CB9CB91D45E75000F3CB61 /* mainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainTableViewCell.m; sourceTree = "<group>"; };
@@ -560,8 +561,8 @@
 				A766C9451D4B58D300B90345 /* CustomSpotlight.m */,
 				A766C93D1D4B571B00B90345 /* RootSpecialeffectsViewController.h */,
 				A766C93E1D4B571B00B90345 /* RootSpecialeffectsViewController.m */,
-				A766C9481D4B5A7900B90345 /* 3DTouchMenuViewController.h */,
-				A766C9491D4B5A7900B90345 /* 3DTouchMenuViewController.m */,
+				A766C9481D4B5A7900B90345 /* ThreeDTouchMenuViewController.h */,
+				A766C9491D4B5A7900B90345 /* ThreeDTouchMenuViewController.m */,
 				A766C94B1D4B5AAC00B90345 /* SpotlightViewController.h */,
 				A766C94C1D4B5AAC00B90345 /* SpotlightViewController.m */,
 			);
@@ -696,6 +697,7 @@
 				A78F7ADC1D4205E30003EB69 /* GCFMacroDefinitionHeader.h */,
 				A78F7ADF1D4211230003EB69 /* GCFConstantString.h */,
 				A7CB9CBB1D45E88800F3CB61 /* GCFMacroDefinitionFont.h */,
+				A7C836661D4F41C4008CA9A0 /* GCFNSNotification.h */,
 			);
 			path = MacroDefinition;
 			sourceTree = "<group>";
@@ -1363,6 +1365,9 @@
 				TargetAttributes = {
 					A7EF60521D3F509E00FA9822 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = HAVW69XLUJ;
+						DevelopmentTeamName = "mangocity.com limited";
+						ProvisioningStyle = Automatic;
 					};
 					A7EF606B1D3F509E00FA9822 = {
 						CreatedOnToolsVersion = 7.2;
@@ -1575,7 +1580,7 @@
 				A7EAB0AA1D4B267D00F0D43B /* TabbarTool.m in Sources */,
 				A7CB9D491D462B4800F3CB61 /* SDCollectionViewCell.m in Sources */,
 				A766C94D1D4B5AAC00B90345 /* SpotlightViewController.m in Sources */,
-				A766C94A1D4B5A7900B90345 /* 3DTouchMenuViewController.m in Sources */,
+				A766C94A1D4B5A7900B90345 /* ThreeDTouchMenuViewController.m in Sources */,
 				A7EAB0A31D4B263700F0D43B /* ZCTabBarButton.m in Sources */,
 				A766C9321D4B3D1300B90345 /* RootWebViewController.m in Sources */,
 				A784FD2D1D470B770055B525 /* MJRefreshConst.m in Sources */,
@@ -1728,6 +1733,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TestExample/TestExample-Prefix.pch";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
@@ -1735,6 +1741,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Example.TestExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1744,12 +1751,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TestExample/TestExample-Prefix.pch";
 				INFOPLIST_FILE = TestExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Example.TestExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

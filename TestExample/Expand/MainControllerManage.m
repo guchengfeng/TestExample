@@ -29,6 +29,11 @@
 @property(strong, nonatomic) ArchitectureViewController *thirdViewController;
 @property(strong, nonatomic) SettingViewController *fourthViewController;
 
+@property(strong, nonatomic)  ZCNavigationController *navController1;
+@property(strong, nonatomic)  ZCNavigationController *navController2;
+@property(strong, nonatomic)  ZCNavigationController *navController3;
+@property(strong, nonatomic)  ZCNavigationController *navController4;
+
 @end
 
 
@@ -57,6 +62,16 @@
     return self;
 }
 
+-(NSMutableArray *)getArrNaviControllers
+{
+    NSMutableArray *arrNaviControllers = [[NSMutableArray alloc]init];
+    [arrNaviControllers addObject:self.navController1];
+    [arrNaviControllers addObject:self.navController2];
+    [arrNaviControllers addObject:self.navController3];
+    [arrNaviControllers addObject:self.navController4];
+    return arrNaviControllers;
+}
+
 - (UIViewController *)creatMainController
 {
     //创建tabbar内容视图
@@ -75,17 +90,19 @@
     self.thirdViewController.tabBarItem = [TabbarTool itemWithTitle:@"架构" normalImg:@"3" selectImg:@"s3"];
     self.fourthViewController.tabBarItem = [TabbarTool itemWithTitle:@"个人中心" normalImg:@"4" selectImg:@"s4"];
     
+    
+    
     //将内容视图装载到NavigationController里
-    ZCNavigationController *navController1 = [[ZCNavigationController alloc] initWithRootViewController:self.firstViewController];
-    ZCNavigationController *navController2 = [[ZCNavigationController alloc] initWithRootViewController:self.secondViewController];
-    ZCNavigationController *navController3 = [[ZCNavigationController alloc] initWithRootViewController:self.thirdViewController];
-    ZCNavigationController *navController4 = [[ZCNavigationController alloc] initWithRootViewController:self.fourthViewController];
+    _navController1 = [[ZCNavigationController alloc] initWithRootViewController:self.firstViewController];
+    _navController2 = [[ZCNavigationController alloc] initWithRootViewController:self.secondViewController];
+    _navController3 = [[ZCNavigationController alloc] initWithRootViewController:self.thirdViewController];
+    _navController4 = [[ZCNavigationController alloc] initWithRootViewController:self.fourthViewController];
     
     
     
     //创建并设置tabBarController
     self.tabBarController = [[ZCTabBarController alloc] init];
-    self.tabBarController.viewControllers = [NSArray arrayWithObjects:navController1, navController2, navController3, navController4, nil];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:_navController1, _navController2, _navController3, _navController4, nil];
     self.tabBarController.selectedIndex = 0;
 
     //设置tabBar中间的按钮

@@ -1,3 +1,4 @@
+---------------------------
 1.说明：“个人”开发者可以申请升级“公司”，可以通过拨打苹果公司客服电话（400 6701 855）来咨询和办理
 作者：李宏涛
 链接：http://www.zhihu.com/question/20308474/answer/73188972
@@ -37,4 +38,13 @@
 （4）协作人数：多人
 费用：299美元一年
 说明：需要注意的是，企业账号开发的应用不能上线App Store，适合那些不希望公开发布应用的企业。同样，申请时也需要公司的邓白氏编码（DUNS Number）。
+
+---------------------------
+This application's application-identifier entitlement does not match that of the installed application. These values must match for an upgrade to be allowed.
+
+iPhone上已经装了包标识符一样的 App，删掉再运行。
+
+文／碧霄问鼎（简书作者）
+原文链接：http://www.jianshu.com/p/b10680a32d35
+著作权归作者所有，转载请联系作者获得授权，并标注“简书作者”。
 

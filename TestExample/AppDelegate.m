@@ -16,6 +16,7 @@
 #import "MainControllerManage.h"
 #import "Custom3DTouch.h"
 #import "CustomSpotlight.h"
+#import "ThreeDTouchMenuViewController.h"
 
 @interface AppDelegate ()
 
@@ -86,6 +87,8 @@
     {
         title=@"贾青";
     }
+    
+    [GCFNotificationCenter postNotificationName:GCFNotification_3DTouch object:title];
 }
 
 @end
